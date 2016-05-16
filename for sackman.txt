@@ -1,0 +1,11 @@
+for sackman 
+- changes to match charting project
+		- adding column on match_id to atop rankings to allow for easier merging between datasets
+		- correct string issues with player names
+		- correct string issues in surface variable, ex. Clay shows up as multiple values
+		
+
+to construct match_id in atp_rankings:
+
+match_id = tourney_date + "-" + "M" + "-" + tourney_name + "-" + round + winner_name + "-" + loser_name
+note: replace " " with "_" in tourney_name
